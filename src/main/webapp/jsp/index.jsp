@@ -8,18 +8,12 @@
 	<meta charset="ISO-8859-1">
 	<title>Welcome</title>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-	<!-- jQuery library -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" ></script>
 
 	<style>
-	body {
-		padding-top: 64px;
-		/* Adjust this value according to the height of your navbar */
-	}
+		body {
+			padding-top: 64px;
+			/* Adjust this value according to the height of your navbar */
+		}
 	</style>
 </head>
 
@@ -111,35 +105,7 @@
 
 	</div>
 
-	<script inline="javascript">
-		window.onload = function() {
-
-			var msg = "${message}";
-			console.log(msg);
-			if (msg == "Save Failure") {
-				Command: toaster["error"]
-						("Something went wrong with the save.")
-			}
-
-			toastr.options = {
-				"closeButton" : true,
-				"debug" : false,
-				"newestOnTop" : false,
-				"progressBar" : true,
-				"positionClass" : "toast-top-right",
-				"preventDuplicates" : false,
-				"onclick" : null,
-				"showDuration" : "300",
-				"hideDuration" : "1000",
-				"timeOut" : "5000",
-				"extendedTimeOut" : "1000",
-				"showEasing" : "swing",
-				"hideEasing" : "linear",
-				"showMethod" : "fadeIn",
-				"hideMethod" : "fadeOut"
-			}
-		}
-	</script>
+	
 
 </body>
 
